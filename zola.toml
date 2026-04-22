@@ -1,0 +1,48 @@
+# The URL the site will be built for
+base_url = "https://blog.drvlabs.de"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+title = "myblog"
+description = "Personal notes and experiments."
+
+theme = "duckquill"
+
+generate_feeds = false
+feed_filenames = ["atom.xml"]
+
+taxonomies = [{ name = "tags", feed = true }]
+
+[markdown]
+smart_punctuation = true
+bottom_footnotes = true
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[search]
+index_format = "fuse_json"
+
+[extra]
+accent_color = "#256a81" #"#ff7800"
+accent_color_dark = "#4146c5" #"#ffa348"
+emoji_favicon = "🔥"
+bundled_fonts = true
+styles = ["nav-search.css", "crt.css"]
+show_copy_button = true
+show_reading_time = true
+show_share_button = false
+show_backlinks = true
+card = false
+
+[extra.nav]
+show_feed = false
+show_theme_switcher = true
+links = [{ url = "@/blog/_index.md", name = "Blog" }]
+
+[extra.footer]
+links = []
