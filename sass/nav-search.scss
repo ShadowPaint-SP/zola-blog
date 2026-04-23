@@ -15,6 +15,10 @@ body:has(#sidebar) #buttons-container #toc {
 	display: none;
 }
 
+body:has(.toc-list) #buttons-container #toc {
+	display: none;
+}
+
 #sidebar {
 	opacity: 1;
 }

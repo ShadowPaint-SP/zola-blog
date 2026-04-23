@@ -1,0 +1,68 @@
+.giallo-l {
+	display: inline-block;
+	min-height: 1lh;
+	width: 100%;
+}
+
+.giallo-ln {
+	display: inline-block;
+	user-select: none;
+	margin-right: 0.4em;
+	padding: 0 0.4em;
+	min-width: 3ch;
+	text-align: right;
+	opacity: 0.8;
+}
+
+article details:not(.closable) {
+	display: block;
+	contain: inline-size;
+	inline-size: 100%;
+	max-inline-size: 100%;
+	min-inline-size: 0;
+}
+
+article details:not(.closable) :where(.pre-container, pre) {
+	inline-size: 100%;
+	max-inline-size: 100%;
+	min-inline-size: 0;
+}
+
+article details:not(.closable) .pre-container {
+	overflow: hidden;
+}
+
+article details:not(.closable) .pre-container .header {
+	min-inline-size: 0;
+}
+
+article details:not(.closable) .pre-container .header span {
+	min-inline-size: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+article details:not(.closable) pre {
+	overflow-x: auto;
+}
+
+blockquote.note a {
+	color: var(--blue-fg);
+}
+
+blockquote.tip a {
+	color: var(--green-fg);
+}
+
+blockquote.important a {
+	color: var(--purple-fg);
+}
+
+blockquote.warning a {
+	color: var(--yellow-fg);
+}
+
+blockquote.caution a {
+	color: var(--red-fg);
+}
