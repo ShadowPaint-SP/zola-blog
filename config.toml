@@ -1,4 +1,4 @@
-title = "Richard"
+title = "Richard Voigtmann"
 description = "Personal notes and experiments."
 theme = "duckquill"
 
@@ -28,7 +28,7 @@ accent_color_dark = "#4146c5" #"#424242" #"#ffa348" #
 neutral_background = true
 #bundled_fonts = true
 styles = ["nav-search.css", "crt.css", "duckquill-fixes.css"]
-scripts = ["code-copy.js"]
+scripts = ["code-copy.js", "prefetch-links.js"]
 show_copy_button = false
 show_reading_time = true
 show_share_button = false
@@ -37,6 +37,7 @@ show_backlinks = true
 [extra.nav]
 show_feed = false
 show_theme_switcher = true
+home_label = "About"
 links = [{ url = "@/blog/_index.md", name = "Blog" }]
 
 [extra.footer]

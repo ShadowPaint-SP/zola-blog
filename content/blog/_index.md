@@ -8,5 +8,3 @@ page_template = "article.html"
 styles = ["article-filter.css"]
 scripts = ["article-filter.js"]
 +++
-
-All notes, experiments, and small writeups.

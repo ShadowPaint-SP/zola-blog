@@ -1,5 +1,5 @@
 +++
-title = "myblog"
+title = "test"
 +++
 
 {% crt() %}
