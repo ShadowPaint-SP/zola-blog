@@ -1,4 +1,4 @@
-title = "Home"
+title = "Richard"
 description = "Personal notes and experiments."
 theme = "duckquill"
 
@@ -23,9 +23,9 @@ theme = "catppuccin-mocha"
 index_format = "fuse_json"
 
 [extra]
-accent_color = "#808080" #"#256a81" #"#ff7800"
-accent_color_dark = "#424242" #"#4146c5" #"#ffa348"
-emoji_favicon = "🔥"
+accent_color = "#256a81" #"#808080" #"#ff7800" #
+accent_color_dark = "#4146c5" #"#424242" #"#ffa348" #
+neutral_background = true
 #bundled_fonts = true
 styles = ["nav-search.css", "crt.css", "duckquill-fixes.css"]
 scripts = ["code-copy.js"]

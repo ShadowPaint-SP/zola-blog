@@ -66,3 +66,72 @@ blockquote.warning a {
 blockquote.caution a {
 	color: var(--red-fg);
 }
+
+:root.neutral-background,
+:root.neutral-background[data-theme="light"] {
+	--bg-color: white;
+}
+
+:root.neutral-background[data-theme="dark"] {
+	--bg-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root.neutral-background:not([data-theme="light"]) {
+		--bg-color: black;
+	}
+}
+
+.home-hero {
+	display: grid;
+	grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr);
+	gap: clamp(1.5rem, 5vw, 3rem);
+	align-items: center;
+	margin-block: clamp(2rem, 8vw, 5rem) clamp(2rem, 6vw, 4rem);
+}
+
+.home-hero__logo {
+	display: block;
+	inline-size: 100%;
+	block-size: auto;
+	color: var(--accent-color);
+	border-radius: 50%;
+	box-shadow: var(--shadow-glow);
+	transition: color var(--transition), box-shadow var(--transition);
+}
+
+.home-hero__content {
+	min-inline-size: 0;
+}
+
+.home-hero__eyebrow {
+	margin-block-end: 0.25rem;
+	color: var(--accent-color);
+	font-size: var(--font-size-small);
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.home-hero h1 {
+	margin-block: 0 0.75rem;
+	font-size: var(--font-size-xxx-large);
+	line-height: 1;
+}
+
+.home-hero p {
+	max-inline-size: 34rem;
+}
+
+.latest-post {
+	margin-block-start: clamp(2rem, 6vw, 4rem);
+}
+
+@media (max-width: 640px) {
+	.home-hero {
+		grid-template-columns: 1fr;
+	}
+
+	.home-hero__logo {
+		max-inline-size: 8rem;
+	}
+}

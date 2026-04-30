@@ -1,5 +1,5 @@
 +++
-title = "How To Setup A Blog"
+title = "How To Set Up A Blog"
 description = "A detailed explenation on how to setup this blog"
 date = 2026-04-23
 [taxonomies]

@@ -37,7 +37,3 @@ title = "myblog"
 
 ```
 {% end %}
-
-# myblog
-
-Notes, experiments, and small writeups collected in one place.

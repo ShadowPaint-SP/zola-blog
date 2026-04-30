@@ -5,16 +5,23 @@
 {%- set date_locale = macros_translate::translate(key="date_locale", default="en_US", language_strings=language_strings) -%}
 {%- set blog_section = get_section(path="blog/_index.md") -%}
 
-{{ section.content | safe }}
+<section class="home-hero" aria-labelledby="home-title">
+    {% include "partials/logo.html" %}
+    <div class="home-hero__content">
+        <p class="home-hero__eyebrow">Richard Voigtmann</p>
+        <h1 id="home-title">myblog</h1>
+        <p>Notes, experiments, and small writeups collected in one place.</p>
+    </div>
+</section>
 
-{%- if blog_section.pages | length > 0 -%}
-	<section class="latest-post" aria-labelledby="latest-post-heading">
-		<h2 id="latest-post-heading">Latest post</h2>
-		{%- set articles_pages = blog_section.pages | slice(end=1) -%}
-		{% include "partials/articles.html" %}
-		<p class="buttons">
-			<a href="{{ get_url(path='@/blog/_index.md', lang=lang) }}">All posts</a>
-		</p>
-	</section>
-{%- endif -%}
+<!--{%- if blog_section.pages | length > 0 -%}
+<section class="latest-post" aria-labelledby="latest-post-heading">
+    <h2 id="latest-post-heading">Latest post</h2>
+    {%- set articles_pages = blog_section.pages | slice(end=1) -%}
+    {% include "partials/articles.html" %}
+    <p class="buttons">
+        <a href="{{ get_url(path='@/blog/_index.md', lang=lang) }}">All posts</a>
+    </p>
+</section>
+{%- endif -%}-->
 {% endblock content %}
